@@ -612,6 +612,13 @@ footer,
   white-space: nowrap;
 }
 
+.plan-button {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
 /* Footer */
 footer {
   padding-top: 30px;
