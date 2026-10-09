@@ -16,17 +16,23 @@
 
   <header class="site-header">
     <a class="header-brand" href="#academia" aria-label="Rage Prime - início">
-      <img src="assets/e2ee2.png" alt="Academia Rage Prime">   
+      <img src="assets/e2ee2.png" alt="Academia Rage Prime">
     </a>
+
+    <input class="menu-toggle" type="checkbox" id="menu-toggle">
+    <label class="menu-button" for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Abrir menu</span>
+    </label>
 
     <nav aria-label="Navegação principal">
-      <a href="#aulas">Aulas</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#aulas">Aulas colaborativas</a>
       <a href="#planos">Planos</a>
-      <a href="#contato">Contato</a>
     </nav>
 
-    <a class="header-cta" href="#contato">Contato <span>→</span>
-    </a>
   </header>
 
   <main>
@@ -41,33 +47,41 @@
 
       <h1>Seu próximo<br>nível começa<br>aqui.</h1>
 
-      <a class="hero-cta" href="#aulas">
-        <img src="assets/c2466.png" alt="Conheça a academia →">
+      <a class="hero-cta" href="#beneficios" aria-label="Rolar para ver os benefícios">
+        <img src="assets/c2466.png" alt="Conheça a academia — ver benefícios">
       </a>
 
-      <p class="hero-proof">
-        Estrutura completa <span>•</span> Aulas coletivas <span>•</span> Evolução de verdade
-      </p>
-
-      <a class="explore" href="#aulas">
-        <img src="assets/a0b56.png" alt="Explore a Rage">
+      <a class="hero-scroll-hint" href="#beneficios">
+        <span>Explore a Rage</span>
+        <span aria-hidden="true">↓</span>
       </a>
+
     </section>
 
-    <section class="value-strip" aria-label="Diferenciais da Rage">
-      <div>
-        <strong>01</strong>
-        <span>Treino para todos os níveis</span>
+    <section class="value-strip" id="beneficios" aria-labelledby="value-title">
+      <div class="value-heading">
+        <h2 id="value-title">Benefícios</h2>
+        <p class="value-years">A Rage tem 20 anos de história ajudando você a evoluir.</p>
       </div>
 
-      <div>
-        <strong>02</strong>
-        <span>Professores que acompanham você</span>
-      </div>
-
-      <div>
-        <strong>03</strong>
-        <span>Ambiente para evoluir</span>
+      <div class="value-content">
+        <input class="benefits-more-toggle" type="checkbox" id="benefits-more">
+        <ul>
+          <li>Estrutura completa</li>
+          <li>Aulas coletivas</li>
+          <li>Evolução acompanhada</li>
+          <li>Ambiente climatizado e moderno</li>
+          <li>Máquinas de última geração</li>
+          <li class="benefit-extra">Pré-treino grátis toda sexta-feira</li>
+          <li class="benefit-extra">DJ toda quarta-feira</li>
+          <li class="benefit-extra">Atração especial com Lucas Fetter três vezes ao mês</li>
+          <li class="benefit-extra">Máquina de gelo disponível</li>
+        </ul>
+        <label class="benefits-more-button" for="benefits-more">
+          <span class="benefits-more-label">Ver mais benefícios</span>
+          <span class="benefits-less-label">Ver menos benefícios</span>
+          <span aria-hidden="true">+</span>
+        </label>
       </div>
     </section>
 
@@ -87,6 +101,7 @@
               <h3>FitDance</h3>
               <p>Energia e diversão em cada movimento.</p>
             </div>
+            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20FitDance." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
           </div>
         </article>
 
@@ -100,6 +115,7 @@
               <h3>Judô kids</h3>
               <p>Confiança e disciplina desde cedo.</p>
             </div>
+            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Jud%C3%B4%20Kids." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
           </div>
         </article>
 
@@ -113,6 +129,7 @@
               <h3>Muay Thai</h3>
               <p>Força, técnica e superação.</p>
             </div>
+            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Muay%20Thai." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
           </div>
         </article>
 
@@ -126,9 +143,11 @@
               <h3>Jiu-jítsu</h3>
               <p>Evolua a cada novo desafio.</p>
             </div>
+            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Jiu-J%C3%ADtsu." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
           </div>
         </article>
       </div>
+
     </section>
 
     <section class="plans section" id="planos">
@@ -144,7 +163,7 @@
             <li>Acesso à área de cardio</li>
             <li>Orientação durante o treino</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Di%C3%A1ria%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">Fechar plano <span>↗</span></a>
+          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Di%C3%A1ria%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
         </article>
 
         <article class="plan">
@@ -156,7 +175,7 @@
             <li>Acesso à área de cardio</li>
             <li>Orientação durante o treino</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Mensal%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">Fechar plano <span>↗</span></a>
+          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Mensal%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
         </article>
 
         <article class="plan">
@@ -168,19 +187,21 @@
             <li>Avaliação física inicial</li>
             <li>Revisão mensal do treino</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Trimestral%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">Fechar plano <span>↗</span></a>
+          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Trimestral%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
         </article>
 
         <article class="plan">
-          <h3>Anual</h3>
+          <h3>Anual recorrente</h3>
           <p class="price">12 × R$ 130,00</p>
           <p class="period">Total de R$ 1.560,00 por ano</p>
           <ul>
             <li>Todos os benefícios do trimestral</li>
             <li>Aulas coletivas incluídas</li>
             <li>Reavaliação física trimestral</li>
+            <li>Avaliação com a nutricionista Jhullye Sampaio</li>
+            <li>Leve um amigo gratuitamente aos finais de semana</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Anual%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">Fechar plano <span>↗</span></a>
+          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Anual%20recorrente%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
         </article>
       </div>
     </section>
@@ -197,10 +218,14 @@
 
       <div class="location">
         <h2>Venha conhecer a <em>Rage.</em></h2>
-
-        <a class="map" href="https://www.google.com/maps/search/?api=1&query=Academia+Rage+Prime+Av.+B+2+Parque+das+Nacoes+Cuiaba" target="_blank" rel="noopener">
-          <img src="assets/7f2f9.png" alt="Mapa ilustrativo. Clique para consultar a localização no Google Maps." loading="lazy">
-        </a>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=Academia+Rage+Prime,+Av.+B,+2,+Parque+das+Nações,+Cuiabá+-+MT&output=embed"
+            title="Localização da Academia Rage Prime"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
 
         <div class="address">
           <img src="assets/a5e57.png" alt="">
@@ -220,31 +245,24 @@
         <p>Musculação, aulas coletivas e uma equipe<br>para acompanhar sua evolução.</p>
       </div>
 
-      <nav aria-label="Links do rodapé">
-        <h2>Explore</h2>
-        <a href="#academia">A academia</a>
-        <a href="#aulas">Aulas</a>
-        <a href="#planos">Planos</a>
-      </nav>
-
       <div class="hours">
-        <h2>Horário e contato</h2>
-
-        <div class="contact-columns">
-          <div>
-            <p>HORÁRIO DE FUNCIONAMENTO</p>
-            <p>
-              Segunda a quinta: 05h às 22h30<br>
-              Sexta-feira: 05h às 22h<br>
-              Sábado: 07h às 11h e 16h às 19h<br>
-              Domingo: 07h às 11h
-            </p>
-          </div>
-        </div>
+        <h2>Horários de funcionamento</h2>
+        <ul class="hours-list">
+          <li><span>Segunda a quinta</span><strong>05h às 22h30</strong></li>
+          <li><span>Sexta-feira</span><strong>05h às 22h</strong></li>
+          <li><span>Sábado</span><strong>07h às 11h e 16h às 19h</strong></li>
+          <li><span>Domingo</span><strong>07h às 11h</strong></li>
+        </ul>
       </div>
+
     </div>
 
     <p class="copyright">© 2026 Academia Rage Prime.</p>
   </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener" aria-label="Falar com a Rage pelo WhatsApp">
+    <img src="assets/whatsapp.png" alt="" aria-hidden="true">
+    <span>Fale no WhatsApp</span>
+  </a>
 </body>
 </html>
