@@ -287,17 +287,24 @@ footer,
   top: 68%;
   left: 8%;
   width: 235px;
-  padding: 10px;
-  border: 1px solid var(--border-active);
-  border-radius: 12px;
-  background: rgba(10, 12, 14, .68);
-  box-shadow: 0 0 32px var(--accent-glow);
-  transition: border-color .2s ease, background .2s ease;
+  aspect-ratio: 1917 / 335;
+  overflow: hidden;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 18px var(--accent-glow));
+  transition: filter .2s ease, transform .2s ease;
 }
 
 .hero-cta:hover {
-  border-color: var(--accent-primary);
-  background: rgba(255, 69, 58, .12);
+  filter: drop-shadow(0 0 24px rgba(255, 69, 58, .3));
+  transform: translateY(-2px);
+}
+
+.hero-cta img {
+  position: relative;
+  top: -48%;
+  width: 106.8%;
+  max-width: none;
+  height: auto;
 }
 
 .hero-proof {
@@ -759,7 +766,7 @@ footer {
   .hero-cta {
     top: 63%;
     left: 7%;
-    width: 195px;
+    width: min(195px, 58vw);
   }
 
   .hero-proof {
