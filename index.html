@@ -1,25 +1,48 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Conheça a Academia Rage Prime: aulas, equipe, planos e horários em Cuiabá.">
-<link rel="stylesheet" href="css/style.css">
-<title>Academia Rage Prime</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Anta&family=Anek+Tamil:wght@400;600&family=Antonio:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Conheça a Academia Rage Prime: aulas, equipe, planos e horários em Cuiabá."
+  >
+
+  <meta name="theme-color" content="#040506">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Academia Rage Prime</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;600&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
 
   <a class="skip" href="#aulas">Ir para o conteúdo</a>
 
+  <!-- HEADER -->
   <header class="site-header">
+
     <a class="header-brand" href="#academia" aria-label="Rage Prime - início">
       <img src="assets/e2ee2.png" alt="Academia Rage Prime">
     </a>
 
-    <input class="menu-toggle" type="checkbox" id="menu-toggle">
+    <input
+      class="menu-toggle"
+      type="checkbox"
+      id="menu-toggle"
+      aria-label="Abrir ou fechar menu"
+    >
+
     <label class="menu-button" for="menu-toggle">
       <span></span>
       <span></span>
@@ -29,171 +52,806 @@
 
     <nav aria-label="Navegação principal">
       <a href="#beneficios">Benefícios</a>
-      <a href="#aulas">Aulas colaborativas</a>
+      <a href="#aulas">Aulas coletivas</a>
+      <a href="#equipe">Equipe</a>
       <a href="#planos">Planos</a>
     </nav>
 
   </header>
 
   <main>
-    <section class="hero" id="academia" aria-label="Academia Rage Prime">
+
+    <!-- HERO -->
+    <section
+      class="hero"
+      id="academia"
+      aria-label="Academia Rage Prime"
+    >
+
       <div class="building">
-        <img src="assets/9add6.png" alt="Fachada iluminada da Academia Rage Prime">
+        <img
+          src="assets/9add6.png"
+          alt="Fachada iluminada da Academia Rage Prime"
+          fetchpriority="high"
+          decoding="async"
+        >
       </div>
 
-      <img class="glow glow-left" src="assets/fcaaf.png" alt="Efeito de brilho decorativo à esquerda">
-      <img class="glow glow-right" src="assets/fcaaf.png" alt="Efeito de brilho decorativo à direita">
-      <img class="athlete" src="assets/76b95.png" alt="Atleta da campanha Rage">
+      <img
+        class="glow glow-left"
+        src="assets/fcaaf.png"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+      >
 
-      <h1>Seu próximo<br>nível começa<br>aqui.</h1>
+      <img
+        class="glow glow-right"
+        src="assets/fcaaf.png"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+      >
 
-      <a class="hero-cta" href="#beneficios" aria-label="Rolar para ver os benefícios">
-        <img src="assets/c2466.png" alt="Conheça a academia — ver benefícios">
-      </a>
+      <img
+        class="athlete"
+        src="assets/76b95.png"
+        alt="Atleta da campanha Rage"
+        fetchpriority="high"
+        decoding="async"
+      >
 
-      <a class="hero-scroll-hint" href="#beneficios">
-        <span>Explore a Rage</span>
-        <span aria-hidden="true">↓</span>
+      <h1>
+        Seu próximo<br>
+        nível começa<br>
+        aqui.
+      </h1>
+
+      <a
+        class="hero-cta"
+        href="#beneficios"
+        aria-label="Rolar para ver os benefícios"
+      >
+        <img
+          src="assets/c2466.png"
+          alt="Conheça a academia — ver benefícios"
+          decoding="async"
+        >
       </a>
 
     </section>
 
-    <section class="value-strip" id="beneficios" aria-labelledby="value-title">
+    <!-- BENEFÍCIOS -->
+    <section
+      class="value-strip"
+      id="beneficios"
+      aria-labelledby="value-title"
+      data-reveal
+    >
+
       <div class="value-heading">
+
         <h2 id="value-title">Benefícios</h2>
-        <p class="value-years">A Rage tem 20 anos de história ajudando você a evoluir.</p>
+
+        <p class="value-years">
+          A Rage tem 20 anos de história ajudando você a evoluir.
+        </p>
+
       </div>
 
       <div class="value-content">
-        <input class="benefits-more-toggle" type="checkbox" id="benefits-more">
+
+        <input
+          class="benefits-more-toggle"
+          type="checkbox"
+          id="benefits-more"
+        >
+
         <ul>
           <li>Estrutura completa</li>
           <li>Aulas coletivas</li>
           <li>Evolução acompanhada</li>
-          <li>Ambiente climatizado e moderno</li>
-          <li>Máquinas de última geração</li>
-          <li class="benefit-extra">Pré-treino grátis toda sexta-feira</li>
-          <li class="benefit-extra">DJ toda quarta-feira</li>
-          <li class="benefit-extra">Atração especial com Lucas Fetter três vezes ao mês</li>
-          <li class="benefit-extra">Máquina de gelo disponível</li>
+
+          <li class="benefit-extra">
+            Ambiente climatizado e moderno
+          </li>
+
+          <li class="benefit-extra">
+            Máquinas de última geração
+          </li>
+
+          <li class="benefit-extra">
+            Pré-treino grátis toda sexta-feira
+          </li>
+
+          <li class="benefit-extra">
+            DJ toda quarta-feira
+          </li>
+
+          <li class="benefit-extra">
+            Atração especial com Lucas Fetter três vezes ao mês
+          </li>
+
+          <li class="benefit-extra">
+            Máquina de gelo disponível
+          </li>
         </ul>
+
         <label class="benefits-more-button" for="benefits-more">
-          <span class="benefits-more-label">Ver mais benefícios</span>
-          <span class="benefits-less-label">Ver menos benefícios</span>
+          <span class="benefits-more-label">
+            Ver mais benefícios
+          </span>
+
+          <span class="benefits-less-label">
+            Ver menos benefícios
+          </span>
+
           <span aria-hidden="true">+</span>
         </label>
+
       </div>
+
     </section>
 
-    <section class="classes section" id="aulas">
+    <!-- EQUIPE -->
+    <section
+      class="equipe section"
+      id="equipe"
+      data-reveal
+    >
+
+      <p class="eyebrow">Equipe Rage</p>
+
+      <h2>Conheça nossa equipe</h2>
+
+      <p class="intro">
+        Profissionais qualificados para orientar seus treinos e ajudar
+        você a alcançar seus objetivos.
+      </p>
+
+      <!-- CATEGORIAS -->
+      <div
+        class="equipe-tabs"
+        role="tablist"
+        aria-label="Categorias da equipe"
+      >
+
+        <input
+          type="radio"
+          name="equipe-categoria"
+          id="tab-instrutores"
+          checked
+        >
+
+        <label
+          for="tab-instrutores"
+          role="tab"
+          aria-controls="painel-instrutores"
+        >
+          Instrutores
+        </label>
+
+        <input
+          type="radio"
+          name="equipe-categoria"
+          id="tab-aulas"
+        >
+
+        <label
+          for="tab-aulas"
+          role="tab"
+          aria-controls="painel-aulas"
+        >
+          Aulas coletivas
+        </label>
+
+        <input
+          type="radio"
+          name="equipe-categoria"
+          id="tab-atendimento"
+        >
+
+        <label
+          for="tab-atendimento"
+          role="tab"
+          aria-controls="painel-atendimento"
+        >
+          Atendimento
+        </label>
+
+        <input
+          type="radio"
+          name="equipe-categoria"
+          id="tab-gestao"
+        >
+
+        <label
+          for="tab-gestao"
+          role="tab"
+          aria-controls="painel-gestao"
+        >
+          Gestão
+        </label>
+
+      </div>
+
+      <!-- PAINEL INSTRUTORES -->
+      <div
+        class="equipe-panel equipe-panel-instrutores"
+        id="painel-instrutores"
+        role="tabpanel"
+        aria-labelledby="tab-instrutores"
+      >
+
+        <div class="equipe-carousel">
+
+          <div class="equipe-viewport">
+
+            <div class="cards-equipe" id="instrutores">
+
+              <div
+                class="equipe-slide"
+                id="instrutores-inicio"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.52 (4).jpeg"
+                      alt="Juan, instrutor da Academia Rage, período matutino"
+                      fetchpriority="high"
+                      decoding="async"
+                    >
+                  </article>
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.52 (3).jpeg"
+                      alt="Cawan, instrutor da Academia Rage, período vespertino"
+                      fetchpriority="high"
+                      decoding="async"
+                    >
+                  </article>
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.51.jpeg"
+                      alt="Adrielli, instrutora da Academia Rage, período vespertino/noturno"
+                      fetchpriority="high"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div
+                class="equipe-slide"
+                id="instrutores-fim"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.50 (1).jpeg"
+                      alt="Carla, instrutora da Academia Rage, período vespertino/noturno"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.52 (2).jpeg"
+                      alt="Hellen, instrutora da Academia Rage, período vespertino"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.53 (1).jpeg"
+                      alt="Lavínia, instrutora da Academia Rage, período matutino"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div
+                class="equipe-slide"
+                id="instrutores-ultima"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.53.jpeg"
+                      alt="Fernanda, instrutora da Academia Rage"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PAINEL AULAS COLETIVAS -->
+      <div
+        class="equipe-panel equipe-panel-aulas"
+        id="painel-aulas"
+        role="tabpanel"
+        aria-labelledby="tab-aulas"
+      >
+
+        <div class="equipe-carousel">
+
+          <div class="equipe-viewport">
+
+            <div class="cards-equipe" id="aulas-coletivas">
+
+              <div
+                class="equipe-slide"
+                id="aulas-coletivas-inicio"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/fitdance-isabella.jpeg"
+                      alt="Aula de FitDance"
+                      loading="lazy"
+                    >
+                  </article>
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/judô-kids-leandro.jpeg"
+                      alt="Aula de judô kids"
+                      loading="lazy"
+                    >
+                  </article>
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/muay-thai-jean.jpeg"
+                      alt="Aula de Muay Thai"
+                      loading="lazy"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div
+                class="equipe-slide"
+                id="aulas-coletivas-fim"
+              >
+0
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/judô-kids-pedro.jpeg"
+                      alt="Aula de jiu-jítsu"
+                      loading="lazy"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PAINEL ATENDIMENTO -->
+      <div
+        class="equipe-panel equipe-panel-atendimento"
+        id="painel-atendimento"
+        role="tabpanel"
+        aria-labelledby="tab-atendimento"
+      >
+
+        <div class="equipe-carousel">
+
+          <div class="equipe-viewport">
+
+            <div class="cards-equipe" id="atendimento">
+
+              <div
+                class="equipe-slide"
+                id="atendimento-maria"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.53 (2).jpeg"
+                      alt="Maria, recepcionista da Academia Rage"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div
+                class="equipe-slide"
+                id="atendimento-cris"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.52 (1).jpeg"
+                      alt="Cris, profissional de serviços gerais da Academia Rage"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PAINEL GESTÃO -->
+      <div
+        class="equipe-panel equipe-panel-gestao"
+        id="painel-gestao"
+        role="tabpanel"
+        aria-labelledby="tab-gestao"
+      >
+
+        <div class="equipe-carousel">
+
+          <div class="equipe-viewport">
+
+            <div class="cards-equipe" id="gestao">
+
+              <div
+                class="equipe-slide"
+                id="gestao-manuela"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.53 (3).jpeg"
+                      alt="Manuela, coordenadora da Academia Rage"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div
+                class="equipe-slide"
+                id="gestao-alexander"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.51 (1).jpeg"
+                      alt="Alexander, supervisor da Academia Rage"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div
+                class="equipe-slide"
+                id="gestao-benedito"
+              >
+
+                <div class="equipe-slide-cards">
+
+                  <article class="card-equipe">
+                    <img
+                      src="assets/WhatsApp Image 2026-10-02 at 12.25.53 (4).jpeg"
+                      alt="Benedito, diretor da Academia Rage"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </article>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- AULAS COLETIVAS -->
+    <section
+      class="classes section"
+      id="aulas"
+      data-reveal
+    >
+
       <p class="eyebrow">Aulas coletivas</p>
+
       <h2>Encontre o seu ritmo</h2>
-      <p class="intro">Mais movimento, novos desafios e uma turma para evoluir com você.</p>
+
+      <p class="intro">
+        Mais movimento, novos desafios e uma turma para evoluir com você.
+      </p>
 
       <div class="class-grid">
-        <article class="class-card">
+
+        <article class="class-card" data-reveal>
+
           <div class="class-photo fit">
-            <img src="assets/162c8.png" alt="Aula de FitDance" loading="lazy">
+            <img
+              src="assets/162c8.png"
+              alt="Aula de FitDance"
+              loading="lazy"
+            >
           </div>
 
           <div class="class-body">
+
             <div>
               <h3>FitDance</h3>
               <p>Energia e diversão em cada movimento.</p>
             </div>
-            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20FitDance." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
+
+            <a
+              class="button class-button"
+              href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20FitDance."
+              target="_blank"
+              rel="noopener"
+            >
+              Comece hoje <span>↗</span>
+            </a>
+
           </div>
+
         </article>
 
-        <article class="class-card">
+        <article class="class-card" data-reveal>
+
           <div class="class-photo judo">
-            <img src="assets/ef18c.png" alt="Aula de judô kids" loading="lazy">
+            <img
+              src="assets/ef18c.png"
+              alt="Aula de judô kids"
+              loading="lazy"
+            >
           </div>
 
           <div class="class-body">
+
             <div>
               <h3>Judô kids</h3>
               <p>Confiança e disciplina desde cedo.</p>
             </div>
-            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Jud%C3%B4%20Kids." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
+
+            <a
+              class="button class-button"
+              href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Jud%C3%B4%20Kids."
+              target="_blank"
+              rel="noopener"
+            >
+              Comece hoje <span>↗</span>
+            </a>
+
           </div>
+
         </article>
 
-        <article class="class-card">
+        <article class="class-card" data-reveal>
+
           <div class="class-photo muay">
-            <img src="assets/1f119.png" alt="Aula de Muay Thai" loading="lazy">
+            <img
+              src="assets/1f119.png"
+              alt="Aula de Muay Thai"
+              loading="lazy"
+            >
           </div>
 
           <div class="class-body">
+
             <div>
               <h3>Muay Thai</h3>
               <p>Força, técnica e superação.</p>
             </div>
-            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Muay%20Thai." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
+
+            <a
+              class="button class-button"
+              href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Muay%20Thai."
+              target="_blank"
+              rel="noopener"
+            >
+              Comece hoje <span>↗</span>
+            </a>
+
           </div>
+
         </article>
 
-        <article class="class-card">
+        <article class="class-card" data-reveal>
+
           <div class="class-photo jiu">
-            <img src="assets/28b41.png" alt="Aula de jiu-jítsu" loading="lazy">
+            <img
+              src="assets/28b41.png"
+              alt="Aula de jiu-jítsu"
+              loading="lazy"
+            >
           </div>
 
           <div class="class-body">
+
             <div>
               <h3>Jiu-jítsu</h3>
               <p>Evolua a cada novo desafio.</p>
             </div>
-            <a class="button class-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Jiu-J%C3%ADtsu." target="_blank" rel="noopener">Comece hoje <span>↗</span></a>
+
+            <a
+              class="button class-button"
+              href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Tenho%20interesse%20sobre%20a%20aula%20de%20Jiu-J%C3%ADtsu."
+              target="_blank"
+              rel="noopener"
+            >
+              Comece hoje <span>↗</span>
+            </a>
+
           </div>
+
         </article>
+
       </div>
 
     </section>
 
-    <section class="plans section" id="planos">
+    <!-- PLANOS -->
+    <section
+      class="plans section"
+      id="planos"
+      data-reveal
+    >
+
       <h2>Escolha seu plano</h2>
 
       <div class="plan-grid">
-        <article class="plan">
+
+        <article class="plan" data-reveal>
+
           <h3>Diária</h3>
+
           <p class="price">R$ 30,00</p>
+
           <p class="period">por dia</p>
+
           <ul>
             <li>Musculação no dia</li>
             <li>Acesso à área de cardio</li>
             <li>Orientação durante o treino</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Di%C3%A1ria%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
+
+          <a
+            class="button plan-button"
+            href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Di%C3%A1ria%20da%20Academia%20Rage%20Prime."
+            target="_blank"
+            rel="noopener"
+          >
+            saiba mais <span>↗</span>
+          </a>
+
         </article>
 
-        <article class="plan">
+        <article class="plan" data-reveal>
+
           <h3>Mensal</h3>
+
           <p class="price">R$ 160,00</p>
+
           <p class="period">por mês</p>
+
           <ul>
             <li>Musculação no dia</li>
             <li>Acesso à área de cardio</li>
             <li>Orientação durante o treino</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Mensal%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
+
+          <a
+            class="button plan-button"
+            href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Mensal%20da%20Academia%20Rage%20Prime."
+            target="_blank"
+            rel="noopener"
+          >
+            saiba mais <span>↗</span>
+          </a>
+
         </article>
 
-        <article class="plan">
+        <article class="plan" data-reveal>
+
           <h3>Trimestral</h3>
+
           <p class="price">R$ 380,00</p>
+
           <p class="period">por 3 meses</p>
+
           <ul>
             <li>Todos os benefícios do mensal</li>
             <li>Avaliação física inicial</li>
             <li>Revisão mensal do treino</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Trimestral%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
+
+          <a
+            class="button plan-button"
+            href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Trimestral%20da%20Academia%20Rage%20Prime."
+            target="_blank"
+            rel="noopener"
+          >
+            saiba mais <span>↗</span>
+          </a>
+
         </article>
 
-        <article class="plan">
+        <article class="plan" data-reveal>
+
           <h3>Anual recorrente</h3>
+
           <p class="price">12 × R$ 130,00</p>
+
           <p class="period">Total de R$ 1.560,00 por ano</p>
+
           <ul>
             <li>Todos os benefícios do trimestral</li>
             <li>Aulas coletivas incluídas</li>
@@ -201,68 +859,341 @@
             <li>Avaliação com a nutricionista Jhullye Sampaio</li>
             <li>Leve um amigo gratuitamente aos finais de semana</li>
           </ul>
-          <a class="button plan-button" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Anual%20recorrente%20da%20Academia%20Rage%20Prime." target="_blank" rel="noopener">saiba mais <span>↗</span></a>
+
+          <a
+            class="button plan-button"
+            href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Quero%20fechar%20o%20plano%20Anual%20recorrente%20da%20Academia%20Rage%20Prime."
+            target="_blank"
+            rel="noopener"
+          >
+            saiba mais <span>↗</span>
+          </a>
+
         </article>
+
       </div>
+
     </section>
 
-    <section class="visit section" id="contato">
+    <!-- CONTATO -->
+    <section
+      class="visit section"
+      id="contato"
+      data-reveal
+    >
+
       <div class="visit-copy">
+
         <h2>
           Seu próximo nível<br>
           <em>começa na Rage.</em>
         </h2>
 
-        <p>Conheça nossa estrutura, nossas aulas<br>e nossa equipe.</p>
+        <p>
+          Conheça nossa estrutura, nossas aulas<br>
+          e nossa equipe.
+        </p>
+
       </div>
 
       <div class="location">
+
         <h2>Venha conhecer a <em>Rage.</em></h2>
+
         <div class="map">
+
           <iframe
             src="https://www.google.com/maps?q=Academia+Rage+Prime,+Av.+B,+2,+Parque+das+Nações,+Cuiabá+-+MT&output=embed"
             title="Localização da Academia Rage Prime"
             allowfullscreen
             loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+
         </div>
 
         <div class="address">
+
           <img src="assets/a5e57.png" alt="">
-          <address>Av. B, 2 — quadra 11 — Parque das Nações,<br>Cuiabá - MT</address>
-          <a class="button" href="https://www.google.com/maps/search/?api=1&query=Academia+Rage+Prime+Av.+B+2+Parque+das+Nacoes+Cuiaba" target="_blank" rel="noopener">
+
+          <address>
+            Av. B, 2 — quadra 11 — Parque das Nações,<br>
+            Cuiabá - MT
+          </address>
+
+          <a
+            class="button"
+            href="https://www.google.com/maps/search/?api=1&query=Academia+Rage+Prime+Av.+B+2+Parque+das+Nacoes+Cuiaba"
+            target="_blank"
+            rel="noopener"
+          >
             Traçar rota ↗
           </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
+
     <div class="footer-grid">
+
       <div class="brand">
-        <img src="assets/cb29f.png" alt="Academia Rage Prime" loading="lazy">
-        <p>Musculação, aulas coletivas e uma equipe<br>para acompanhar sua evolução.</p>
+
+        <img
+          src="assets/cb29f.png"
+          alt="Academia Rage Prime"
+          loading="lazy"
+        >
+
+        <p>
+          Musculação, aulas coletivas e uma equipe<br>
+          para acompanhar sua evolução.
+        </p>
+
       </div>
 
       <div class="hours">
+
         <h2>Horários de funcionamento</h2>
+
         <ul class="hours-list">
-          <li><span>Segunda a quinta</span><strong>05h às 22h30</strong></li>
-          <li><span>Sexta-feira</span><strong>05h às 22h</strong></li>
-          <li><span>Sábado</span><strong>07h às 11h e 16h às 19h</strong></li>
-          <li><span>Domingo</span><strong>07h às 11h</strong></li>
+
+          <li>
+            <span>Segunda a quinta</span>
+            <strong>05h às 22h30</strong>
+          </li>
+
+          <li>
+            <span>Sexta-feira</span>
+            <strong>05h às 22h</strong>
+          </li>
+
+          <li>
+            <span>Sábado</span>
+            <strong>07h às 11h e 16h às 19h</strong>
+          </li>
+
+          <li>
+            <span>Domingo</span>
+            <strong>07h às 11h</strong>
+          </li>
+
         </ul>
+
       </div>
 
     </div>
 
-    <p class="copyright">© 2026 Academia Rage Prime.</p>
+    <div class="footer-bottom">
+
+      <p class="copyright">
+        © 2026 Academia Rage Prime.
+      </p>
+
+      <p class="developer-credit">
+        Desenvolvido por
+
+        <a
+          href="https://github.com/mauriciofernandodev-sketch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mauricio
+        </a>
+      </p>
+
+    </div>
+
   </footer>
 
-  <a class="floating-whatsapp" href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener" aria-label="Falar com a Rage pelo WhatsApp">
-    <img src="assets/whatsapp.png" alt="" aria-hidden="true">
+  <!-- WHATSAPP FLUTUANTE -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/5565992135045?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com a Rage pelo WhatsApp"
+  >
+
+    <img
+      src="assets/whatsapp.png"
+      alt=""
+      aria-hidden="true"
+    >
+
     <span>Fale no WhatsApp</span>
+
   </a>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // Ativar as animações somente quando JavaScript estiver disponível
+    document.documentElement.classList.add("js");
+
+    // Animações de entrada durante o scroll
+    const revealElements = document.querySelectorAll("[data-reveal]");
+
+    if ("IntersectionObserver" in window) {
+
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("is-visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+
+    } else {
+
+      // Fallback para navegadores sem IntersectionObserver
+      revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+      });
+
+    }
+
+    // Fechar o menu mobile ao selecionar uma seção
+    const menuToggle = document.querySelector("#menu-toggle");
+
+    const menuLinks = document.querySelectorAll(
+      ".site-header nav a"
+    );
+
+    menuLinks.forEach((link) => {
+
+      link.addEventListener("click", () => {
+
+        menuToggle.checked = false;
+
+      });
+
+    });
+
+    // Fechar o menu ao pressionar Escape
+    document.addEventListener("keydown", (event) => {
+
+      if (event.key === "Escape") {
+
+        menuToggle.checked = false;
+
+      }
+
+    });
+
+    // Permitir arrastar os carrosséis com mouse ou toque
+    const carouselSelector = "#instrutores, #aulas-coletivas, #atendimento, #gestao";
+    const carousels = document.querySelectorAll(carouselSelector);
+
+    const getClosestPosition = (carousel) => {
+      const currentPosition = carousel.scrollLeft;
+      const items = carousel.querySelectorAll(":scope > .equipe-slide > .equipe-slide-cards > .card-equipe");
+
+      return [...items].reduce((closest, item) => {
+        const itemPosition = item.getBoundingClientRect().left
+          - carousel.getBoundingClientRect().left
+          + currentPosition;
+
+        return Math.abs(itemPosition - currentPosition) < Math.abs(closest - currentPosition)
+          ? itemPosition
+          : closest;
+      }, 0);
+    };
+
+    carousels.forEach((carousel) => {
+      carousel.classList.add("drag-scroll");
+
+      let startX = 0;
+      let startScrollLeft = 0;
+      let dragged = false;
+      let pointerId = null;
+
+      carousel.addEventListener("pointerdown", (event) => {
+        const activeCarousel = event.target.closest(".drag-scroll");
+
+        if (
+          activeCarousel !== carousel ||
+          event.button !== 0 ||
+          event.target.closest("a, button, input, label")
+        ) {
+          return;
+        }
+
+        startX = event.clientX;
+        startScrollLeft = carousel.scrollLeft;
+        dragged = false;
+        pointerId = event.pointerId;
+        carousel.setPointerCapture(pointerId);
+      });
+
+      carousel.addEventListener("pointermove", (event) => {
+        if (pointerId !== event.pointerId) {
+          return;
+        }
+
+        const distance = event.clientX - startX;
+
+        if (Math.abs(distance) > 6) {
+          dragged = true;
+          carousel.classList.add("is-dragging");
+          event.preventDefault();
+        }
+
+        if (dragged) {
+          carousel.scrollLeft = startScrollLeft - distance;
+        }
+      });
+
+      const finishDrag = (event) => {
+        if (pointerId !== event.pointerId) {
+          return;
+        }
+
+        if (carousel.hasPointerCapture(pointerId)) {
+          carousel.releasePointerCapture(pointerId);
+        }
+
+        carousel.classList.remove("is-dragging");
+
+        if (dragged) {
+          carousel.scrollTo({
+            left: getClosestPosition(carousel),
+            behavior: "smooth"
+          });
+        }
+
+        pointerId = null;
+      };
+
+      carousel.addEventListener("pointerup", finishDrag);
+      carousel.addEventListener("pointercancel", finishDrag);
+    });
+
+  </script>
+
 </body>
 </html>
