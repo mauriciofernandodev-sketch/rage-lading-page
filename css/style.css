@@ -1528,19 +1528,33 @@ footer {
   }
 
   .equipe-slide {
-    position: relative;
-    display: contents;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
     min-width: 0;
   }
 
   .equipe-slide-cards {
-    display: contents;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
   }
 
-#instrutores,
-#aulas-coletivas,
-#atendimento,
-#gestao {
+  #atendimento > .equipe-slide,
+  #gestao > .equipe-slide {
+    flex: 0 0 min(78vw, 280px);
+    width: min(78vw, 280px);
+  }
+
+  #atendimento .equipe-slide-cards,
+  #gestao .equipe-slide-cards {
+    width: auto;
+  }
+
+  #instrutores,
+  #aulas-coletivas,
+  #atendimento,
+  #gestao {
     display: flex;
     width: 100%;
     gap: 12px;
@@ -1553,11 +1567,6 @@ footer {
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
   }
-
-    #atendimento .equipe-slide-cards,
-    #gestao .equipe-slide-cards {
-      display: contents;
-    }
 
   #instrutores::-webkit-scrollbar,
   #aulas-coletivas::-webkit-scrollbar,
@@ -1574,18 +1583,18 @@ footer {
     scroll-snap-align: start;
   }
 
-  #atendimento .equipe-slide .card-equipe,
-  #gestao .equipe-slide .card-equipe {
-    flex-basis: min(78vw, 280px);
-    width: min(78vw, 280px);
-  }
-
   .equipe-slide .card-equipe:first-child {
     border-radius: 18px 0 0 18px;
   }
 
   .equipe-slide .card-equipe:last-child {
     border-radius: 0 18px 18px 0;
+  }
+
+  #atendimento .equipe-slide .card-equipe,
+  #gestao .equipe-slide .card-equipe {
+    width: 100%;
+    border-radius: 18px;
   }
 
   .classes,
