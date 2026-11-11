@@ -945,14 +945,17 @@ section {
   gap: 24px;
 }
 
-#atendimento > .equipe-slide,
-#gestao > .equipe-slide {
-  flex: 0 0 calc((100% - 48px) / 3);
-}
-
 #atendimento,
 #gestao {
   gap: 24px;
+}
+
+#atendimento > .equipe-slide {
+  flex: 0 0 calc((100% - 24px) / 2);
+}
+
+#gestao > .equipe-slide {
+  flex: 0 0 calc((100% - 48px) / 3);
 }
 
 #atendimento .equipe-slide-cards,
@@ -1548,7 +1551,7 @@ footer {
 
   #atendimento .equipe-slide-cards,
   #gestao .equipe-slide-cards {
-    width: auto;
+    width: 100%;
   }
 
   #instrutores,
